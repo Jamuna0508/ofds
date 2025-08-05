@@ -1,0 +1,312 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* Global styles */
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 130px; /* Adjust size as needed */
+    height: 130px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Ensures content within the circle stays visible */
+}
+
+.logo img {
+    width: 100%; /* Ensures the image fills the circular container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(to right, #4CAF50, #008CBA); /* Gradient background */
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensure text and button are above background image */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color:orange;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff4500;
+    color: #ffffff;
+}
+
+/* About section */
+.about {
+    background-color: #282c34; /* Dark background color for contrast */
+    color: orange; /* Light text color for readability */
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 0;
+}
+
+.about .container {
+    position: relative;
+    z-index: 1; /* Ensures the content is above the overlay */
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ff9900; /* Accent color */
+}
+
+.about .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #dddddd;
+    margin-bottom: 1.5rem;
+}
+
+.about ul {
+    list-style: none;
+    margin-top: 2rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about ul li {
+    flex: 1 1 45%;
+    margin: 1rem;
+    text-align: left;
+    background: #333333; /* Darker background for the list items */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about ul li strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #ff9900; /* Accent color */
+    margin-bottom: 0.5rem;
+}
+
+/* Additional Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Services section */
+.services {
+    background-color: #e6f7ff; /* Light blue background */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service i {
+    font-size: 4rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.service p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Our products section */
+.our-products {
+    background-color: #fff0f5; /* Light pink background */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.our-products h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.fuel-prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.fuel-type {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fuel-image {
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    margin-bottom: 1rem;
+}
+
+.fuel-type h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.fuel-type p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Footer section */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff4500;
+}
+

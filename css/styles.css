@@ -1,0 +1,706 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/bk.jpg'); 
+    background-size: cover;
+}
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px; /* Adjust as needed */
+    height: 120px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Spacing between logo and text */
+    border-radius: 50%; /* Make the logo circular */
+    overflow: hidden; /* Ensure circular clipping */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 10px; /* Decrease font size */
+    font-weight: bold;
+    margin-left: 10px; /* Add margin to separate from logo */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.loginbtn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginbtn:hover {
+    background-color: #555;
+}
+
+.hero {
+    width:100;
+    contain-intrinsic-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    color:BLACK; /* Change the font color to a different color */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f57c00;
+}
+
+.about {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 50px 0; /* Adjust padding */
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+.about .container {
+    max-width: 800px; /* Limit container width */
+    margin: 0 auto; /* Center align container */
+}
+
+.about h1 {
+    font-size: 36px; /* Adjust font size */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+.about h2 {
+    font-size: 30px; /* Adjust font size */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+.about p {
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 30px; /* Adjust margin */
+}
+
+.about h1::after {
+    content: ''; /* Add content */
+    display: block; /* Display as block */
+    width: 60px; /* Set width */
+    height: 3px; /* Set height */
+    background-color: #4CAF50; /* Set color */
+    margin: 10px auto; /* Adjust margin */
+}
+
+.about p:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+}
+
+.about .cta-btn {
+    display: inline-block; /* Display as inline block */
+    padding: 12px 24px; /* Adjust padding */
+    background-color: #4CAF50; /* Set background color */
+    color: #fff; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Add border radius */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.about .cta-btn:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
+
+/* Animation for About Section */
+.about .container {
+    animation: slide-up 0.5s ease forwards; /* Apply animation */
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.services.elegant-theme {
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color */
+    padding: 50px 0; /* Adding padding top and bottom */
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: box-shadow 0.3s ease; /* Add transition effect */
+    animation: fadeInUp 1s ease; /* Add fade-in animation */
+}
+
+.service:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+}
+
+.service i {
+    font-size: 40px; /* Adjust icon size */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+.service h3 {
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+.service p {
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HOW IT WORKS Section */
+.services {
+    background-color: #f8f9fa; /* Set background color */
+    padding: 50px 0; /* Adjust padding */
+    text-align: center;
+    color: #333; /* Set text color */
+}
+
+.services h2 {
+    font-size: 30px; /* Adjust font size */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+.services .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .service {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #fff; /* Set background color */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: box-shadow 0.3s ease; /* Add transition effect */
+}
+
+.services .service:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+}
+
+.services .service i {
+    font-size: 40px; /* Adjust icon size */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+.services .service h3 {
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+.services .service p {
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+
+
+/* Styles for services section */
+.services-area {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.single-services {
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInRight 1s forwards;
+}
+
+.single-services:hover {
+    transform: translateY(-5px);
+}
+
+.services-icon img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.services-title a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.services-content p {
+    color: #666;
+    margin-top: 10px;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Our Products Section */
+.elegant-theme .container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.product-selection label {
+    font-weight: bold;
+}
+
+.custom-select select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.fuel-prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fuel-type {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.fuel-type img {
+    width: 100%;
+    border-radius: 10px; /* Make the images slightly rounded */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transition: transform 0.3s ease; /* Add transition effect for hover */
+    animation: pulse 2s linear infinite; /* Add pulse animation */
+}
+
+.fuel-type img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.fuel-type h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.fuel-type p {
+    margin-bottom: 10px;
+}
+
+.order-now {
+    text-align: center;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.delivery-info {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+
+/* Animation for image pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Delivery Location Section */
+#delivery-location .container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    border: 2px solid #4CAF50; /* Varied border compared to login */
+}
+
+#delivery-location h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#delivery-location label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#delivery-location input[type="text"],
+#delivery-location select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#delivery-location button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#delivery-location button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#delivery-location button[type="submit"]:focus {
+    outline: none;
+}
+
+
+/* Payment Section */
+#Payment .container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 2px solid #e74c3c; /* Varied border compared to delivery location */
+    border-radius: 10px;
+}
+
+#Payment h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#Payment h6 {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+#Payment label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#Payment input[type="text"],
+#Payment input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#Payment .payment-methods {
+    display: flex;
+    justify-content: center;
+}
+
+#Payment .payment-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#Payment .payment-button img {
+    width: 100px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+#Payment .scanner-image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 200px;
+}
+
+#Payment button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#Payment button[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+#Payment button[type="submit"]:focus {
+    outline: none;
+}
+
+#Payment .cta-btn {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#Payment .cta-btn:hover {
+    background-color: #2980b9;
+}
+
+#Payment .cta-btn:focus {
+    outline: none;
+}
+
+#FAQs .container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#FAQs h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#FAQs .faq {
+    margin-bottom: 20px;
+}
+
+#FAQs input[type="checkbox"] {
+    display: none;
+}
+
+#FAQs label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+#FAQs label:hover {
+    background-color: #e0e0e0;
+}
+
+#FAQs .answer {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(189, 75%, 61%);
+    display: none;
+}
+
+#FAQs input[type="checkbox"]:checked ~ .answer {
+    display: block;
+}
+
+/* Contact Us Section Styles */
+#contact {
+    background-color: #333;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#contact ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #ffca28;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: hsl(184, 69%, 47%);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
+
